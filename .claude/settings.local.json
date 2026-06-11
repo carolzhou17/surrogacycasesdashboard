@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell($base = \"C:\\\\Users\\\\zhous\\\\OneDrive - Tsong Law Group\\\\Ralph Tsong's files - Active Cases\\\\Surrogacy Cases\"; Get-ChildItem $base | Where-Object { $_.PSIsContainer } | Select-Object Name | Select-Object -First 20)",
+      "PowerShell($base = \"C:\\\\Users\\\\zhous\\\\OneDrive - Tsong Law Group\\\\Ralph Tsong's files - Active Cases\\\\Surrogacy Cases\"; Get-ChildItem $base | Where-Object { $_.PSIsContainer -and \\($_.Name -match \"stat|dashboard|report|admin|data|chart|audit\"\\) } | Select-Object Name)"
+    ]
+  }
+}
